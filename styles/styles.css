@@ -258,15 +258,39 @@ main .section.highlight {
 
 
 main .lightbackground {
+  /* Size and position */
   block-size: 100%;
   inline-size: 100%;
   display: block;
- 
+  position: absolute;
   inset-block-start: 0px;
   inset-inline-end: 0px;
   z-index: 1;
 
+  /* Gradient overlay */
   --direction: 90deg;
-  background: linear-gradient(var(--direction, 180deg), rgba(38, 38, 38, 0.9) 0%, rgba(38, 38, 38, 0) 100%), 
+  background: linear-gradient(
+                var(--direction, 180deg),
+                rgba(38, 38, 38, 0.9) 0%,
+                rgba(38, 38, 38, 0) 100%
+              ),
               rgba(38, 38, 38, 0.2);
+
+  /* Carbon Design System custom properties */
+  --cds-background: #262626;
+  --cds-focus: #fff;
+  --cds-text-primary: #f4f4f4;
+  --cds-text-inverse: #262626;
+  --cds-button-tertiary: #f4f4f4;
+  --cds-button-tertiary-hover: #f4f4f4;
+  --cds-text-on-color: #f4f4f4;
+  --cds-link-01: var(--cds-link-inverse);
+
+  background-color: var(--cds-background);
+  border-radius: 1rem;
+  box-shadow: 0 0 10px #33b1ff;
+
+  /* Padding (last value takes precedence) */
+  padding-block: 3rem;
 }
+
