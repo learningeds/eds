@@ -283,11 +283,11 @@ main .lightbackground {
   --cds-text-inverse: #262626;
   --cds-button-tertiary: #f4f4f4;
   --cds-button-tertiary-hover: #f4f4f4;
-  --cds-text-on-color: #f4f4f4;
+  text-on-color: #ffffff;
   --cds-link-01: var(--cds-link-inverse);
 --light-color: #f8f8f8;
   --dark-color: #505050;
-  --text-color: #ffffff;
+  text-color: #ffffff;
   --link-color: #3b63fb;
   --link-hover-color: #1d3ecf;
   background-color: var(--cds-background);
