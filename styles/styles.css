@@ -158,9 +158,10 @@ a:any-link {
   color: var(--link-color);
   text-decoration: none;
   overflow-wrap: break-word;
+  position: relative;
   display: inline-flex;
   align-items: center;
-  gap: 4px; /* spacing between text and icon */
+  gap: 4px;
 }
 
 a:hover {
@@ -168,16 +169,17 @@ a:hover {
   text-decoration: underline;
 }
 
-/* Optional icon class if you use an inline element for the icon */
-a .link-icon {
+a::after {
+  content: '🔗'; /* or use a Unicode icon or custom content */
   font-size: 0.9em;
-  display: inline-block;
+  margin-left: 4px;
   transition: transform 0.2s ease;
 }
 
-a:hover .link-icon {
-  transform: translateX(2px); /* subtle shift on hover */
+a:hover::after {
+  transform: translateX(2px);
 }
+
 
 
 /* buttons */
