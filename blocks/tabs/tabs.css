@@ -18,13 +18,14 @@
   }
 }
 
+
 .tabs .tabs-list button {
+    font-family: 'IBM Plex Sans', sans-serif;
   flex: 0 0 max-content;
   margin: 0;
    border-radius: 0;
   background-color: var(--light-color);
   color: initial;
-  font-weight: bold;
   line-height: unset;
   text-align: initial;
   text-overflow: unset;
