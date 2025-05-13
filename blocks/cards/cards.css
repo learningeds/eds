@@ -4,7 +4,6 @@
   padding: 0;
   display: grid;
   grid-template-columns: repeat(auto-fill, minmax(257px, 1fr));
-  grid-gap: 24px;
 }
 
 .cards > ul > li {
@@ -14,6 +13,16 @@
 
 .cards .cards-card-body {
   margin: 16px;
+}
+.cards .cards-card-body p {
+  display: none;
+  color: grey;
+  transition: color 0.3s ease;
+}
+
+.cards > ul > li:hover .cards-card-body p {
+  display: block;
+  color: grey;
 }
 
 .cards .cards-card-image {
