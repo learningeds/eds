@@ -298,3 +298,8 @@ main .lightbackground {
   padding-block: 3rem;
 }
 
+main .lightbackground h2,
+main .lightbackground p,
+main .lightbackground a {
+  color: #ffffff;
+}
