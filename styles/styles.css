@@ -166,20 +166,31 @@ a:any-link {
 
 a:hover {
   color: var(--link-hover-color);
-  text-decoration: underline;
+  text-decoration: none; /* keep it clean since icon is shown */
 }
 
 a::after {
-  content: '🔗'; /* or use a Unicode icon or custom content */
-  font-size: 0.9em;
+  content: '→'; /* ← This is the arrow icon */
+  font-size: 1em;
+  transition: transform 0.3s ease;
   margin-left: 4px;
-  transition: transform 0.2s ease;
+  opacity: 0;
+  transform: translateX(-4px);
 }
 
 a:hover::after {
-  transform: translateX(2px);
+  opacity: 1;
+  transform: translateX(0);
 }
 
+a:hover::before {
+  content: ''; /* Optional: no visual text before */
+}
+
+/* Hide actual link text on hover */
+a:hover {
+  color: transparent; /* Makes text disappear */
+}
 
 
 /* buttons */
