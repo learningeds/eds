@@ -1,6 +1,4 @@
-.tabs {
-  font-family: sans-serif;
-}
+
 .tabs .tabs-list {
   display: flex;
   max-width: 100%;
@@ -24,6 +22,8 @@
 .tabs .tabs-list button {
   flex: 0 0 max-content;
   margin: 0;
+    border: none;
+    border-bottom: 1px solid #dadada; 
    border-radius: 0;
   background-color: #ffffff;
   color: initial;
