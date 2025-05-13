@@ -1,5 +1,5 @@
 .tabs {
-  font-family: 'IBM Plex Sans', sans-serif;
+  font-family: sans-serif;
 }
 .tabs .tabs-list {
   display: flex;
@@ -32,10 +32,11 @@
   text-overflow: unset;
   overflow: unset;
   white-space: unset;
-  transition: background-color 0.2s;
+
 }
 
 .tabs .tabs-list button p {
+    font-family: 'IBM Plex Sans', sans-serif;
   margin: 0;
 }
 
