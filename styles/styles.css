@@ -161,31 +161,25 @@ a:any-link {
   position: relative;
   display: inline-flex;
   align-items: center;
-  gap: 200px;
+  gap: 4px;
 }
 
 a:hover {
   color: var(--link-hover-color);
-  text-decoration: none; /* keep it clean since icon is shown */
+  text-decoration: underline;
 }
 
 a::after {
-  content: '→'; /* ← This is the arrow icon */
-  font-size: 1em;
-  transition: transform 0.3s ease;
+  content: '→';
+  font-size: 0.9em;
   margin-left: 4px;
-  opacity: 0;
-  transform: translateX(-4px);
+  transition: transform 0.2s ease;
 }
 
 a:hover::after {
-  opacity: 1;
-  transform: translateX(0);
+  transform: translateX(2px);
 }
 
-a:hover::before {
-  content: ''; /* Optional: no visual text before */
-}
 
 /* Hide actual link text on hover */
 a:hover {
