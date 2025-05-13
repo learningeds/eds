@@ -255,3 +255,18 @@ main .section.highlight {
   margin: 0;
   padding: 40px 0;
 }
+
+
+main .lightbackground {
+  block-size: 100%;
+  inline-size: 100%;
+  display: block;
+  position: absolute;
+  inset-block-start: 0px;
+  inset-inline-end: 0px;
+  z-index: 1;
+
+  --direction: 90deg;
+  background: linear-gradient(var(--direction, 180deg), rgba(38, 38, 38, 0.9) 0%, rgba(38, 38, 38, 0) 100%), 
+              rgba(38, 38, 38, 0.2);
+}
