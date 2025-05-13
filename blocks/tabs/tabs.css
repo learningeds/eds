@@ -40,10 +40,15 @@
 }
 
 .tabs .tabs-list button:hover {
-  background-color: #e0f0ff; 
-  border-color: #3399ff;    
-  color: #003366;           
+  border-bottom: 4px solid var(--cds-link-primary, #0f62fe);
 }
+
+.tabs .tabs-list button[aria-selected='true'] {
+  border-bottom: 4px solid var(--cds-link-primary, #0f62fe);
+  background-color: var(--background-color);
+  cursor: initial;
+}
+
 
 
 .tabs .tabs-list button[aria-selected='true'] {
