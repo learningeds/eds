@@ -158,12 +158,27 @@ a:any-link {
   color: var(--link-color);
   text-decoration: none;
   overflow-wrap: break-word;
+  display: inline-flex;
+  align-items: center;
+  gap: 4px; /* spacing between text and icon */
 }
 
 a:hover {
   color: var(--link-hover-color);
   text-decoration: underline;
 }
+
+/* Optional icon class if you use an inline element for the icon */
+a .link-icon {
+  font-size: 0.9em;
+  display: inline-block;
+  transition: transform 0.2s ease;
+}
+
+a:hover .link-icon {
+  transform: translateX(2px); /* subtle shift on hover */
+}
+
 
 /* buttons */
 a.button:any-link,
