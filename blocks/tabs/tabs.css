@@ -40,6 +40,9 @@
 }
 
 .tabs .tabs-list button:hover {
+  background-color: #e0f0ff;
+  border-color: #0f62fe;    
+  color: #003366;
   border-bottom: 4px solid var(--cds-link-primary, #0f62fe);
 }
 
@@ -51,11 +54,7 @@
 
 
 
-.tabs .tabs-list button[aria-selected='true'] {
-  border-bottom: 1px solid var(--background-color);
-  background-color: var(--background-color);
-  cursor: initial;
-}
+
 
 .tabs .tabs-panel {
   margin-top: -1px;
