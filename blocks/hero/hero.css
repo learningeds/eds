@@ -15,24 +15,6 @@
   margin-right: auto;
   color: var(--background-color);
 }
-.hero p {
-  max-width: 1200px;
-  margin: 16px auto 0;
-  font-size: 1rem;
-  line-height: 1.6;
-  color: var(--background-color);
-}
-
-.hero a {
-  color: var(--background-color);
-  text-decoration: underline;
-  font-weight: 500;
-}
-
-.hero a:hover {
-  text-decoration: none;
-}
-
 .hero picture {
   position: absolute;
   z-index: -1;
