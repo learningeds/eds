@@ -41,7 +41,8 @@
   opacity: 0;
   transition: opacity 0.3s ease, visibility 0.3s ease;
   color: grey;
-  margin: 8px 0 0;
+  
+    margin: 3rem 0 0;
 }
 
 
