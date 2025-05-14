@@ -34,7 +34,8 @@
 .cards .cards-card-body {
   margin: 16px;
     padding-top: 2rem;
-    margin: 8px 0 3rem;
+   
+     margin: 3rem 0 0;
 }
 .cards .cards-card-body p {
   visibility: hidden;
@@ -42,7 +43,6 @@
   transition: opacity 0.3s ease, visibility 0.3s ease;
   color: grey;
   
-    margin: 3rem 0 0;
 }
 
 
