@@ -33,6 +33,7 @@
 
 .cards .cards-card-body {
   margin: 16px;
+    padding-top: 2rem;
 }
 .cards .cards-card-body p {
   visibility: hidden;
@@ -41,6 +42,7 @@
   color: grey;
   margin: 8px 0 0;
 }
+
 
 .cards > ul > li:hover .cards-card-body p {
   visibility: visible;
