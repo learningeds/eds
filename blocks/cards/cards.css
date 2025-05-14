@@ -34,8 +34,8 @@
 .cards .cards-card-body {
   margin: 16px;
     padding-top: 2rem;
+    padding-bottom:5rem;
    
-     margin: 3rem 0 0;
 }
 .cards .cards-card-body p {
   visibility: hidden;
