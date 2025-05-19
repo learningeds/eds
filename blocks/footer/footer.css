@@ -1,6 +1,7 @@
 footer {
   background-color: black;
   font-size: var(--body-font-size-xs);
+  color: white; /* Sets all text in the footer to white */
 }
 
 footer .footer > div {
@@ -11,6 +12,18 @@ footer .footer > div {
 
 footer .footer p {
   margin: 0;
+}
+
+/* Style links to remove any potential icons and ensure text is white */
+footer .footer a {
+  color: white; /* Ensures links are white */
+  text-decoration: none; /* Removes underline from links */
+}
+
+/* Prevent any pseudo-elements (like ::before or ::after) that might add icons */
+footer .footer a::before,
+footer .footer a::after {
+  display: none; /* Hides any potential icon-adding pseudo-elements */
 }
 
 @media (width >= 900px) {
