@@ -206,7 +206,7 @@ button {
   text-align: left;
   text-decoration: none;
   background-color: transparent; /* no background */
-  color: black; /* black text */
+  color: blue; /* black text */
   cursor: pointer;
   overflow: hidden;
   text-overflow: ellipsis;
@@ -219,7 +219,7 @@ button:hover {
 }
 a.button::after,
 button::after {
-  content: '🔗'; /* replace with desired icon if using SVG or font-icon */
+   content: '→';
   margin-left: 8px;
   transition: transform 0.3s ease;
 }
