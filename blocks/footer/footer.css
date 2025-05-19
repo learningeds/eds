@@ -1,10 +1,9 @@
 footer {
- 
+  background-color: var(--light-color);
   font-size: var(--body-font-size-xs);
 }
 
 footer .footer > div {
-     blackground-color: black;
   margin: auto;
   max-width: 1200px;
   padding: 40px 24px 24px;
