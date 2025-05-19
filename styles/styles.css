@@ -191,46 +191,35 @@ a:hover {
 a.button:any-link,
 button {
   box-sizing: border-box;
-  display: inline-flex; /* allow icon to sit on right */
-  align-items: center;
-  justify-content: flex-start; /* align to left */
+  display: inline-block;
+
   max-width: 100%;
   margin: 12px 0;
-  border: none;
-  border-bottom: 1px solid #000; /* horizontal line */
-  padding: 0.5em 1.2em 0.5em 0;
+ border: 2px solid transparent;
+  border-radius: 0;
+  padding: 0.5em 1.2em;
   font-family: var(--body-font-family);
   font-style: normal;
   font-weight: 500;
   line-height: 1.25;
-  text-align: left;
+  text-align: center;
   text-decoration: none;
-  background-color: transparent; /* no background */
-  color: black; /* black text */
+   background-color: var(--link-color);
+  color: var(--background-color);
   cursor: pointer;
   overflow: hidden;
   text-overflow: ellipsis;
   white-space: nowrap;
-  position: relative;
+  
 }
 a.button:hover,
-button:hover {
-  text-decoration: underline;
-}
-a.button::after,
-button::after {
-  content: '🔗'; /* replace with desired icon if using SVG or font-icon */
-  margin-left: 8px;
-  transition: transform 0.3s ease;
-}
-
-}
 a.button:focus,
 button:hover,
 button:focus {
   background-color: var(--link-hover-color);
   cursor: pointer;
 }
+
 
 button:disabled,
 button:disabled:hover {
