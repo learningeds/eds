@@ -191,9 +191,9 @@ a:hover {
 a.button:any-link,
 button {
   box-sizing: border-box;
-  display: inline-flex;
+  display: inline-flex; /* allow icon to sit on right */
   align-items: center;
-  justify-content: flex-start;
+  justify-content: flex-start; /* align to left */
   max-width: 100%;
   margin: 12px 0;
   border: none;
@@ -204,30 +204,23 @@ button {
   font-weight: 500;
   line-height: 1.25;
   text-align: left;
-  background-color: transparent;
-  color: blue;
+  text-decoration: none;
+  background-color: transparent; /* no background */
+  color: black; /* black text */
   cursor: pointer;
   overflow: hidden;
+  text-overflow: ellipsis;
   white-space: nowrap;
   position: relative;
 }
-
-/* Wrap the text in a span for underline effect on hover */
-button .button-text {
-  text-decoration: none;
-  transition: text-decoration 0.2s ease;
-}
-
-/* Add underline only to text on hover */
-button:hover .button-text {
+a.button:hover,
+button:hover {
   text-decoration: underline;
 }
-
-/* Icon on the right */
+a.button::after,
 button::after {
-  content: '→';
-  margin-left: 16px; /* more spacing between text and icon */
-  color: blue;
+  content: '🔗'; /* replace with desired icon if using SVG or font-icon */
+  margin-left: 8px;
   transition: transform 0.3s ease;
 }
 
