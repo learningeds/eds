@@ -82,3 +82,7 @@
 .table table th:hover {
   text-decoration: underline;
 }
+.table table td span:hover,
+.table table th span:hover {
+  text-decoration: underline;
+}
