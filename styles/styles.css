@@ -229,8 +229,9 @@ button:disabled:hover {
 
 a.button.secondary,
 button.secondary {
-  background-color: unset;
-  border: 2px solid currentcolor;
+  background-color: transparent;
+     border-bottom: 1px solid #000;
+  border: none;
   color: var(--text-color);
 }
 
