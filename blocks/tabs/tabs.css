@@ -73,7 +73,7 @@
 
 .tabs .tabs-list button:hover {
    border: 1px solid #dadada;
-  border-color: #0f62fe;    
+  border-color: #0f62fe;
   color: #003366;
   border-bottom: 4px solid var(--cds-link-primary, #0f62fe);
 }
