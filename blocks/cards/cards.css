@@ -17,38 +17,44 @@
   overflow: hidden;
 }
 
-/* Icon on top-left */
-.cards > ul > li::before {
-  content: "📩"; /* Message icon emoji */
-  position: absolute;
-  top: 8px;
-  left: 8px;
-  font-size: 20px;
-  background-color: white; /* Optional: contrast background */
-  padding: 4px;
-  border-radius: 4px; /* Optional: slight rounding */
-  z-index: 1;
-  pointer-events: none;
-}
 
 .cards .cards-card-body {
+position: relative;
   margin: 16px;
     padding-top: 2rem;
-  
-   
-}
-.cards .cards-card-body p {
-  visibility: hidden;
-  opacity: 0;
-  transition: opacity 0.3s ease, visibility 0.3s ease;
-  color: grey;
-  
-}
 
 
-.cards > ul > li:hover .cards-card-body p {
-  visibility: visible;
-  opacity: 1;
+}
+.cards .cards-card-body p:not(:first-child),
+.cards .cards-card-body table {
+  visibility: hidden; /* Hides non-icon paragraphs and table by default */
+  opacity: 0; /* Makes them fully transparent */
+  transition: opacity 0.3s ease, visibility 0.3s ease; /* Smoothly transitions visibility and opacity on hover */
+  color: grey; /* Sets text color to grey (applies to paragraphs) */
+}
+
+.cards > ul > li:hover .cards-card-body p:not(:first-child),
+.cards > ul > li:hover .cards-card-body table {
+  visibility: visible; /* Makes them visible on hover */
+  opacity: 1; /* Fades them to full opacity */
+}
+
+.cards .cards-card-body p:first-child .icon.icon-pictogram {
+    height: 40px;
+    width: 40px;
+  position: absolute; /* Positions the icon relative to the card body */
+  top: 8px; /* Places the icon 8px from the top */
+  left: 8px; /* Places the icon 8px from the left */
+  font-size: 20px; /* Sets the icon size (affects container, not img) */
+  background-color: white; /* Gives the icon a white background */
+  padding: 4px 4px 2px 4px !important;  /* Adds padding inside the icon container */
+  border-radius: 4px; /* Rounds the corners of the icon container */
+  z-index: 1; /* Ensures the icon stays above other content */
+  pointer-events: none; /* Prevents the icon from interfering with mouse interactions */
+}
+.cards .cards-card-body p:first-child {
+  margin: 0; /* Removes margin to prevent layout shift */
+  line-height: 0; /* Minimizes the paragraph’s impact on spacing */
 }
 
 

@@ -20,11 +20,14 @@
 
 
 .tabs .tabs-list button {
+ position: relative;
+
+    justify-content: center;
   flex: 0 0 max-content;
   margin: 0;
-    border: none;
-    border-bottom: 1px solid #dadada; 
-   border-radius: 0;
+  border: none;
+  border-bottom: 1px solid #dadada;
+  border-radius: 0;
   background-color: #ffffff;
   color: initial;
   line-height: unset;
@@ -32,13 +35,41 @@
   text-overflow: unset;
   overflow: unset;
   white-space: unset;
-
+  padding: 24px 16px 16px;
 }
+.tabs .tabs-list .icon.icon-pictogram {
+  position: absolute;
+  top: 8px;
+  right: 8px;
+  width: 32px;
+  height: 32px;
+}
+
+
 
 .tabs .tabs-list button p {
-    font-family: 'IBM Plex Sans', sans-serif;
+  font-family: 'IBM Plex Sans', sans-serif;
   margin: 0;
+  color: var(--cds-text-primary, #161616);
+  font-size: 14px;
+  font-weight: 500;
+  letter-spacing: 0.16px;
+  line-height: 18px;
+  text-align: left;
+  padding: 8px 40px;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 8px;
 }
+.tabs .tabs-list .icon.icon-pictogram img {
+  width: 32px;
+  height: 32px;
+
+  margin-left: auto;
+}
+
 
 .tabs .tabs-list button:hover {
    border: 1px solid #dadada;
@@ -52,9 +83,6 @@
   background-color: var(--background-color);
   cursor: initial;
 }
-
-
-
 
 
 .tabs .tabs-panel {

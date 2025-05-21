@@ -19,10 +19,9 @@
   --link-color: #3b63fb;
   --link-hover-color: #1d3ecf;
 
- /* fonts */
---body-font-family: "IBM Plex Sans", "Helvetica Neue", Arial, sans-serif;
---heading-font-family: "IBM Plex Sans", "Helvetica Neue", sans-serif;
-
+  /* fonts */
+  --body-font-family: "IBM Plex Sans", "Helvetica Neue", Arial, sans-serif;
+  --heading-font-family: "IBM Plex Sans", "Helvetica Neue", sans-serif;
 
   /* body sizes */
   --body-font-size-m: 22px;
@@ -181,22 +180,19 @@ a:hover::after {
   transform: translateX(2px);
 }
 
-
 /* Hide actual link text on hover */
 a:hover {
   color: transparent; /* Makes text disappear */
 }
-
 
 /* buttons */
 a.button:any-link,
 button {
   box-sizing: border-box;
   display: inline-block;
-
   max-width: 100%;
   margin: 12px 0;
- border: 2px solid transparent;
+  border: 2px solid transparent;
   border-radius: 0;
   padding: 0.5em 1.2em;
   font-family: var(--body-font-family);
@@ -205,14 +201,14 @@ button {
   line-height: 1.25;
   text-align: center;
   text-decoration: none;
-   background-color: var(--link-color);
+  background-color: var(--link-color);
   color: var(--background-color);
   cursor: pointer;
   overflow: hidden;
   text-overflow: ellipsis;
   white-space: nowrap;
-  
 }
+
 a.button:hover,
 a.button:focus,
 button:hover,
@@ -220,7 +216,6 @@ button:focus {
   background-color: var(--link-hover-color);
   cursor: pointer;
 }
-
 
 button:disabled,
 button:disabled:hover {
@@ -231,7 +226,7 @@ button:disabled:hover {
 a.button.secondary,
 button.secondary {
   background-color: transparent;
-     border-bottom: 1px solid #000;
+  border-bottom: 1px solid #000;
   border: none;
   color: var(--text-color);
 }
@@ -282,13 +277,11 @@ main .section.highlight {
   padding: 40px 0;
 }
 
-
 main .lightbackground {
   /* Size and position */
   block-size: 100%;
   inline-size: 100%;
   display: block;
-  
   inset-block-start: 0px;
   inset-inline-end: 0px;
   z-index: 1;
@@ -311,7 +304,7 @@ main .lightbackground {
   --cds-button-tertiary-hover: #f4f4f4;
   text-on-color: #ffffff;
   --cds-link-01: var(--cds-link-inverse);
---light-color: #f8f8f8;
+  --light-color: #f8f8f8;
   --dark-color: #505050;
   text-color: #ffffff;
   --link-color: #3b63fb;
@@ -329,12 +322,226 @@ main .lightbackground p,
 main .lightbackground a {
   color: #ffffff;
 }
-#meetwatsonx,
-#meetwatsonx * {
+
+main .meetwatson h2#meetwatsonx,
+main .meetwatson h2 {
   -webkit-background-clip: text;
-  caret-color: #0f62fe;
+  font-weight: 200;
+  -webkit-text-fill-color: transparent;
   background-image: linear-gradient(90deg, #0f62fe, #8a3ffc);
-  color: transparent;
+  caret-color: #0f62fe;
+  display: inline-block;
+  font-size: calc(1.07813rem + 2.34375vw);
+  line-height: 1.19;
+}
+
+main .aibusiness h2 {
+  padding-bottom: 10rem;
+  font-weight: 300;
+  line-height: 1.22;
+  font-size: calc(1.07813rem + 2.34375vw);
+}
+
+main .driveproductivity h2 {
+  font-weight: 300;
+  line-height: 1.22;
+  font-size: calc(1.07813rem + 2.34375vw);
+}
+
+main .explorelink a:hover {
+  color: var(--link-hover-color); /* Ensure text remains visible */
+}
+
+main .explorelink .library-metadata h2 {
+  font-weight: 300;
+  line-height: 1.22;
+  font-size: calc(1.07813rem + 2.34375vw);
+  margin: 0 0 1.5rem 0;
+}
+
+/* Ensure the table and its wrapper take full width */
+main .explorelink .table-wrapper {
+  width: 100%;
+}
+
+main .explorelink .table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+/* Ensure table rows and cells stretch to full width */
+main .explorelink .table tr {
+  width: 100%;
+}
+
+main .explorelink .table td {
+  width: 100%;
+
+  padding-top: 16px; /* Updated padding-top as requested */
+  padding-bottom: 16px; /* Updated padding-bottom as requested */
+}
+
+/main .explorelink .table td p {
+   margin: 0;
+   font-size: 16px;
+   display: flex;
+   align-items: center;
+
+ }
+ main .explorelink .table td a {
+   font-weight: 400;
+   display: inline-block;
+
+ }
+
+main .explorelink .table td a::after {
+  margin-left: 0; /* Remove extra margin */
+  font-size: 0.9em;
+}
+
+/* Add row separators */
+main .explorelink .table tr:not(:last-child) {
+  border-bottom: 1px solid #e0e0e0;
+}
+
+/* Responsive adjustments */
+@media (width >= 900px) {
+  main .explorelink .table td p {
+    font-size: 16px;
+  }
+}
+/* Footer background and text color */
+.section.footerset {
+  background-color: #161616;
+  padding: 2rem 1rem;
+}
+
+.section.footerset p,
+.section.footerset a,
+.section.footerset h2,
+.section.footerset li {
+  color: #ffffff;
+}
+/* Columns block padding */
+.footerset .columns.block.columns-4-cols {
+  border-bottom: 1px solid white;
+}
+
+.footerset .columns.block.columns-4-cols > div > div:nth-of-type(2) {
+  padding-top: 0;
+  padding-bottom: 110px;
+}
+
+.footerset .columns.block.columns-4-cols > div > div:nth-of-type(4) {
+  padding-bottom: 100px;
+}
+
+
+
+/* Style for links */
+.section.footerset a {
+  text-decoration: none;
+  background-image: none !important;   /* Prevent background icons */
+  padding-right: 0 !important;         /* Remove space for icon if added */
+  position: relative;
+}
+
+/* Remove any pseudo-element icons (commonly used for external links) */
+.section.footerset a::after,
+.section.footerset a::before {
+  content: none !important;
+  display: none !important;
+}
+
+/* Optional: Hover effect */
+.section.footerset a:hover {
+  text-decoration: underline;
+  color: #cccccc;
+}
+.section.footerset .columns-img-col {
+  margin-top: -500px; /* Adjust this value as needed */
+  margin-left: -4rem;
+}
+/* For all <p> tags inside the 4-column block */
+.columns-4-cols p {
+      /* White text */
+  font-weight: bold;    /* Bold text */
+  margin: 0 0 0.5rem 0; /* Optional: spacing between paragraphs */
+  font-weight: 400;
+  font-size: 16px;
+}
+
+/* For all <a> (link) tags inside the 4-column block */
+.columns-4-cols a {
+  color: #cccccc;        /* Light grey links */
+  font-weight: normal;   /* Optional: remove bold if inherited */
+  text-decoration: none; /* Optional: remove underline */
+  font-weight: 200;     /* Light font weight */
+    font-size: 14px;
+
+}
+.columns-4-cols li::marker {
+  color: #161616;
+}
+
+.section.watsonreal .button {
+  background-color: #ffffff;
+  color: #0062fe;
+  border: none;
+   text-decoration: none;
+}
+.section.watsonreal .button:hover {
+  color: #0043ce; /* dark blue */
+  text-decoration: underline;
+}
+.watsonreal h2 {
+
+  font-weight: 300;
+  line-height: 1.22;
+  font-size: calc(1.07813rem + 2.34375vw);
+}
+.section.leadspace.carousel-container h2 {
+  padding-bottom: 10rem;
+  font-weight: 300;
+  line-height: 1.22;
+  font-size: calc(1.07813rem + 2.34375vw);
+  margin-bottom: 96px;
+}
+.section.leadspace.carousel-container .carousel-slide-content p {
+  font-family: 'IBM Plex Sans', sans-serif;
+  font-weight: 300;
+  font-size: 1.52rem;
+  line-height: 1.2;
+  text-align: left;
+  max-width: 430px;
+  margin: 1rem 0;
+}
+.section.leadspace.carousel-container .button-container .button {
+  font-family: 'IBM Plex Sans', sans-serif;
+  font-weight: 400;
+  font-size: 1.100rem;
+  color: #ffffff;
+  background-color: #0f62fe;
+  padding: 0.75rem 1.5rem;
+  border: 1px solid #0f62fe;
+  border-radius: 2px;
+  text-decoration: none;
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.section.leadspace.carousel-container .button-container .button:hover {
+  background-color: #0043ce;
+  color: #ffffff;
+  text-decoration: none;
+}
+
+.section.leadspace.carousel-container .button-container .button .link-icon {
+  font-size: 1.5rem; /* Makes the arrow bigger */
+  line-height: 1;
   display: inline-block;
 }
+
 
